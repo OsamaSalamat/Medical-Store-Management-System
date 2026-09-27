@@ -196,15 +196,3 @@ Expected: React opens at `http://localhost:3000`.
 2. Login as admin or register a patient.
 3. Browse medicines, add to cart, place order.
 4. Admin panel: manage inventory, approve prescriptions, update order status.
-
-### 8) Common issues
-- If `Cannot connect` from frontend: verify backend at `http://localhost:5000/api/medicines` returns JSON.
-- If backend fails on start: check MySQL service is running and credentials in `backend/config/db.js`.
-- If port conflict: kill process using port 5000 (for backend) or 3000 (for frontend), then restart.
-
-### 9) If you want one-click start
-- I can add `run-all.bat` and `stop-all.bat` scripts in root to start backend+frontend quickly.
-
----
-
-If you want, I can now also add a short script to auto-reseed the database with sample test data and one-click start commands (`run.bat`).
